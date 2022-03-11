@@ -6,18 +6,18 @@ import (
 )
 
 type Student struct {
-	studentName string
-	grade       int
+	StudentName string
+	Grade       int
 }
 
 type Status func(string) bool
 
 func (s Student) Greeting() {
-	fmt.Printf("Hello %s from grade %d \n", s.studentName, s.grade)
+	fmt.Printf("Hello %s from grade %d \n", s.StudentName, s.Grade)
 }
 
 func (s Student) GetNameAt(i int) string {
-	return strings.Split(s.studentName, " ")[i-1]
+	return strings.Split(s.StudentName, " ")[i-1]
 }
 
 func User(userName string, status Status) {
