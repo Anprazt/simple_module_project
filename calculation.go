@@ -23,10 +23,10 @@ func CalculateCircle(diameter float64) (float64, float64) {
 	return luas, keliling
 }
 
-func (p Persegi) luas() float64 {
+func (p Persegi) area() float64 {
 	return math.Pow(p.sisi, 2)
 }
 
-func (p Persegi) keliling() float64 {
+func (p Persegi) circumference() float64 {
 	return p.sisi * 4
 }
