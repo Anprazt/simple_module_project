@@ -5,8 +5,8 @@ import (
 )
 
 type Hitung interface {
-	luas() float64
-	keliling() float64
+	area() float64
+	circumference() float64
 }
 
 type Persegi struct {
