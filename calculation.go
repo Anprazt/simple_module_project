@@ -5,8 +5,8 @@ import (
 )
 
 type Hitung interface {
-	area() float64
-	circumference() float64
+	Area() float64
+	Circumference() float64
 }
 
 type Persegi struct {
@@ -23,10 +23,10 @@ func CalculateCircle(diameter float64) (float64, float64) {
 	return luas, keliling
 }
 
-func (p Persegi) area() float64 {
+func (p Persegi) Area() float64 {
 	return math.Pow(p.sisi, 2)
 }
 
-func (p Persegi) circumference() float64 {
+func (p Persegi) Circumference() float64 {
 	return p.sisi * 4
 }
