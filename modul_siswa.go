@@ -12,6 +12,14 @@ type Student struct {
 
 type Status func(string) bool
 
+type TeacherProfile struct {
+	ID      int
+	Name    string
+	Age     int
+	Address string
+	Telp    string
+}
+
 func About() {
 	fmt.Println("Ini adalah data-data siswa")
 }
@@ -45,4 +53,19 @@ func AnonymousOrtu() {
 		Notelp:   "081284846363",
 	}
 	fmt.Println(OrTu)
+}
+func ProfileTeacher() {
+	var profile TeacherProfile
+	profile.ID = 1
+	profile.Name = "Prazt Andi Wicaksana"
+	profile.Age = 25
+	profile.Address = "Cikoneng"
+	profile.Telp = "081284846363"
+
+	fmt.Println(profile)
+	fmt.Printf("Id Teacher \t: %d \n", profile.ID)
+	fmt.Printf("Name \t: %s \n", profile.Name)
+	fmt.Printf("Age \t: %d tahun \n", profile.Age)
+	fmt.Printf("Address \t: %s \n", profile.Address)
+	fmt.Printf("Telephone Number \t %s \n", profile.Telp)
 }
