@@ -20,8 +20,8 @@ type TeacherProfile struct {
 	Telp    string
 }
 
-func About() {
-	fmt.Println("Ini adalah data-data siswa")
+func About(asalSekolah string) {
+	fmt.Println("Ini adalah data-data siswa dari sekolah ", asalSekolah)
 }
 
 func (s Student) Greeting() {
@@ -64,8 +64,8 @@ func ProfileTeacher() {
 
 	fmt.Println(profile)
 	fmt.Printf("Id Teacher \t: %d \n", profile.ID)
-	fmt.Printf("Name \t: %s \n", profile.Name)
-	fmt.Printf("Age \t: %d tahun \n", profile.Age)
-	fmt.Printf("Address \t: %s \n", profile.Address)
-	fmt.Printf("Telephone Number \t %s \n", profile.Telp)
+	fmt.Printf("Name \t\t: %s \n", profile.Name)
+	fmt.Printf("Age \t\t: %d tahun \n", profile.Age)
+	fmt.Printf("Address \t\t: %s \n", profile.Address)
+	fmt.Printf("Telephone Number: %s \n", profile.Telp)
 }
