@@ -12,6 +12,10 @@ type Student struct {
 
 type Status func(string) bool
 
+func About() {
+	fmt.Println("Ini adalah data-data siswa")
+}
+
 func (s Student) Greeting() {
 	fmt.Printf("Hello %s from grade %d \n", s.StudentName, s.Grade)
 }
@@ -26,4 +30,19 @@ func User(userName string, status Status) {
 	} else {
 		fmt.Printf("%s adalah siswa berstatus tidak aktif \n", userName)
 	}
+}
+
+func AnonymousOrtu() {
+	OrTu := struct {
+		OrtuName string
+		Alamat   string
+		Usia     int
+		Notelp   string
+	}{
+		OrtuName: "Arifin",
+		Alamat:   "Cikoneng",
+		Usia:     50,
+		Notelp:   "081284846363",
+	}
+	fmt.Println(OrTu)
 }
