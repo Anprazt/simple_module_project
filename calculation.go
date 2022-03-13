@@ -10,7 +10,7 @@ type Hitung interface {
 }
 
 type Persegi struct {
-	sisi float64
+	Sisi float64
 }
 
 func Sum(x int, y int) int {
@@ -24,9 +24,9 @@ func CalculateCircle(diameter float64) (float64, float64) {
 }
 
 func (p Persegi) Area() float64 {
-	return math.Pow(p.sisi, 2)
+	return math.Pow(p.Sisi, 2)
 }
 
 func (p Persegi) Circumference() float64 {
-	return p.sisi * 4
+	return p.Sisi * 4
 }
